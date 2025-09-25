@@ -1,0 +1,56 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 2rem;
+  background: #f4f4f4;
+}
+
+h1, h2 {
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+/* part 1 */
+.animated-btn {
+  padding: 12px 24px;
+  border: none;
+  background: #4cafef;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background .4s, transform .3s;
+}
+
+.animated-btn:hover {
+  background: #0077cc;
+  transform: scale(1.1);
+}
+
+.animated-box {
+  width: 100px;
+  height: 100px;
+  margin: 2rem auto;
+  background: coral;
+  animation: pulse 3s infinite alternate;
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1); background: coral; }
+  100% { transform: scale(1.2); background: crimson; }
+}
+
+/* part 3 */
+#magicBox {
+  width: 120px;
+  height: 120px;
+  background: seagreen;
+  margin: 2rem auto;
+  border-radius: 10px;
+  transition: transform .5s, opacity .5s;
+}
+
+.animate {
+  transform: rotate(360deg) scale(1.2);
+  opacity: .6;
+}
+  
